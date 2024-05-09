@@ -1,0 +1,47 @@
+.frame {
+    border: 2px solid red;
+    display: flex;
+    height: 100vh;
+}
+
+.column-1 {
+    border: 2px solid pink;
+    width: 33.33%;
+}
+
+.column-2 {
+    border: 2px solid purple;
+    width: 33.33%;
+}
+
+.column-3 {
+    border: 2px solid green;
+    width: 33.33%;
+}
+
+.combos_container {
+    border: 2px solid yellow;
+}
+
+.pastery_container {
+    border: 2px solid orange;
+}
+
+.sandwiches_container {
+    border: 2px solid red;
+}
+
+.samoosa_container {
+    border: 2px solid turquoise;
+}
+
+.drinks_container {
+    border: 2px solid blue;
+}
+
+.lable {
+    display: flex;
+    min-width: 100%;
+    background: lime;
+    justify-content: space-between;
+}
