@@ -1,5 +1,19 @@
+:root {
+    --theme_color_prime--: rgb(0, 0, 0);
+    --theme_color_sec--: rgb(255, 94, 0);
+}
+/*fonts*/
+@font-face {
+    font-family: 'PermanentMarker-Regular';
+    /*font-weight: 400;*/
+    src: url('assets/fonts/PermanentMarker-Regular.ttf') format('ttf');
+}
+/*end*/
+/*
+frame container holding entire body container
+*/
 .frame {
-    border: 2px solid red;
+    background-color: rgb(0, 0, 0);
     display: flex;
     height: 100vh;
 }
@@ -21,27 +35,49 @@
 
 .combos_container {
     border: 2px solid yellow;
+    display: flex;
+    flex-direction: column;
 }
 
-.pastery_container {
+.pie_container {
     border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
 }
 
 .sandwiches_container {
     border: 2px solid red;
+    display: flex;
+    flex-direction: column;
 }
 
 .samoosa_container {
     border: 2px solid turquoise;
+    display: flex;
+    flex-direction: column;
 }
 
-.drinks_container {
+.hot_beverages {
     border: 2px solid blue;
+    display: flex;
+    flex-direction: column;
+}
+
+.slush_puppy_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-title {
+    margin: 0 auto;
+    min-width: 100%;
+    text-align: center;
+    background-color: var(--theme_color_sec--);
 }
 
 .lable {
     display: flex;
     min-width: 100%;
-    background: lime;
     justify-content: space-between;
+    color: var(--theme_color_sec--);
 }
