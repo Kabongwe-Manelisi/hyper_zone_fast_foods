@@ -1,21 +1,18 @@
 :root {
     --theme_color_prime--: rgb(0, 0, 0);
     --theme_color_sec--: rgb(255, 94, 0);
+    --title_font--: "Permanent Marker", cursive; font-weight: 400; font-style: normal;
+    --lable_font--: "Bebas Neue";
 }
-/*fonts*/
-@font-face {
-    font-family: 'PermanentMarker-Regular';
-    /*font-weight: 400;*/
-    src: url('assets/fonts/PermanentMarker-Regular.ttf') format('ttf');
-}
-/*end*/
+
+  
 /*
 frame container holding entire body container
 */
 .frame {
-    background-color: rgb(0, 0, 0);
+    background: var(--theme_color_prime--);
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .column-1 {
@@ -69,6 +66,8 @@ frame container holding entire body container
 }
 
 .list-title {
+    font-family: var(--title_font--);
+    font-size: 1rem;
     margin: 0 auto;
     min-width: 100%;
     text-align: center;
@@ -76,8 +75,10 @@ frame container holding entire body container
 }
 
 .lable {
+    font-family: var(--lable_font--);
+    font-size: 1rem;
     display: flex;
     min-width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;
     color: var(--theme_color_sec--);
 }
