@@ -3,6 +3,9 @@
     --theme_color_sec--: rgb(255, 94, 0);
     --title_font--: "Permanent Marker", cursive; font-weight: 400; font-style: normal;
     --lable_font--: "Bebas Neue";
+    --lable_font_size--: 1.5rem;
+    --title_font_size--: 2rem;
+    --sub-title_font_size--: 2rem;
 }
 
   
@@ -15,26 +18,67 @@ frame container holding entire body container
     height: 100vh;
 }
 
+/*
+
+MAIN BODY COLUMNS/CONTAINERS
+
+*/
+
+/*
+
+FOOD MENUE COLUMNS
+
+*/
 .column-1 {
     width: 100%;
     border-right: 20px solid var(--theme_color_sec--);
+    border-left: 20px solid var(--theme_color_sec--);
 }
 
 .column-2 {
     width: 100%;
-    border-left: 20px solid var(--theme_color_sec--)
+    border-left: 20px solid var(--theme_color_sec--);
+    border-right: 20px solid var(--theme_color_sec--);
 }
 
 .column-3 {
     width: 100%;
-    border-right: 20px solid var(--theme_color_sec--)
+    border-right: 20px solid var(--theme_color_sec--);
+    border-left: 20px solid var(--theme_color_sec--);
 }
 
 .column-4 {
     width: 100%;
+    border-right: 20px solid var(--theme_color_sec--);
+    border-left: 20px solid var(--theme_color_sec--);
+}
+
+.column-5 {
+    width: 100%;
+    border-right: 20px solid var(--theme_color_sec--);
+    border-left: 20px solid var(--theme_color_sec--);
+}
+
+.column-6 {
+    width: 100%;
+    border-right: 20px solid var(--theme_color_sec--);
+    border-left: 20px solid var(--theme_color_sec--);
+}
+/*
+
+DRINKS MENUE COLUMNS
+
+*/
+.column-7 {
+    width: 100%;
     border-left: 20px solid var(--theme_color_sec--)
 }
 
+/*
+
+MENUE ITEMS CONTAINERS
+
+*/
 .combos_container {
     display: flex;
     flex-direction: column;
@@ -65,18 +109,67 @@ frame container holding entire body container
     flex-direction: column;
 }
 
+.breakfast_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.burgers_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fish_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.grills_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chow_mein_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.chips_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.salads_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+
+MENUE LIST TITLE & LABLE
+
+*/
 .list-title {
     font-family: var(--title_font--);
-    font-size: 1.5rem;
+    font-size: var(--title_font_size--);
     margin: 0 auto;
     min-width: 100%;
     text-align: center;
     background-color: var(--theme_color_sec--);
 }
 
+.sub-title {
+    font-family: var(--lable_font--);
+    font-size: var(--sub-title_font_size--);
+    color: var(--theme_color_sec--);
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
 .lable {
     font-family: var(--lable_font--);
-    font-size: 1rem;
+    font-size: var(--lable_font_size--);
     display: flex;
     min-width: 100%;
     justify-content: space-between;
