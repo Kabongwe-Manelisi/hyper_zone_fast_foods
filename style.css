@@ -1,5 +1,5 @@
 :root {
-    --theme_color_prime--: rgb(0, 0, 0);
+    --theme_color_prime--: rgb(30, 31, 31);
     --theme_color_sec--: rgb(255, 94, 0);
     --title_font--: "Permanent Marker", cursive; font-weight: 400; font-style: normal;
     --lable_font--: "Bebas Neue";
@@ -167,11 +167,11 @@ MENUE LIST TITLE & LABLE
 .list-title {
     font-family: var(--title_font--);
     font-size: var(--title_font_size--);
+    text-align: center;
     position: relative;
 
     margin: 0 auto;
     min-width: 100%;
-    text-align: center;
     background-color: var(--theme_color_sec--);
     display: flex;
 }
@@ -180,8 +180,7 @@ MENUE LIST TITLE & LABLE
     font-family: var(--lable_font--);
     font-size: var(--sub-title_font_size--);
     color: var(--theme_color_sec--);
-    width: 50%;
-    margin: auto;
+    width: 100%;
     text-align: center;
 }
 
@@ -192,6 +191,7 @@ MENUE LIST TITLE & LABLE
     min-width: 100%;
     justify-content: space-between;
     color: var(--theme_color_sec--);
+    letter-spacing: 0.25rem;
 }
 
 .menue-item {
@@ -203,7 +203,7 @@ MENUE LIST TITLE & LABLE
 }
 
 .img {
-    position: absolute;
-    z-index: 2;
-    width: 50%;
+    width: 12.6rem;
+    border-radius: 100%;
+    background: var(--theme_color_prime--);
 }
