@@ -144,6 +144,21 @@ MENUE ITEMS CONTAINERS
     flex-direction: column;
 }
 
+.wraps_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bunnies_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.extras_container {
+    display: flex;
+    flex-direction: column;
+}
+
 /*
 
 MENUE LIST TITLE & LABLE
@@ -152,10 +167,13 @@ MENUE LIST TITLE & LABLE
 .list-title {
     font-family: var(--title_font--);
     font-size: var(--title_font_size--);
+    position: relative;
+
     margin: 0 auto;
     min-width: 100%;
     text-align: center;
     background-color: var(--theme_color_sec--);
+    display: flex;
 }
 
 .sub-title {
@@ -182,4 +200,10 @@ MENUE LIST TITLE & LABLE
 
 .menue-item-price {
     margin: 0 1rem;
+}
+
+.img {
+    position: absolute;
+    z-index: 2;
+    width: 50%;
 }
