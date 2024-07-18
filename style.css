@@ -1,10 +1,10 @@
 :root {
     --theme_color_prime--: rgb(255, 94, 0);;
-    --theme_color_sec--: rgb(30, 31, 31);
+    --theme_color_sec--: rgb(0, 0, 0)/*rgb(30, 31, 31)*/;
     --title_font--: "Permanent Marker", cursive; font-weight: 400; font-style: normal;
     --lable_font--: "Bebas Neue";
     --title_font_size--: 2.75rem;
-    --lable_font_size--: 2rem;
+    --lable_font_size--: 2.75rem;
     --sub-title_font_size--: 3rem;
 }
 
@@ -13,9 +13,10 @@
 frame container holding entire body container
 */
 .frame {
-    background: var(--theme_color_prime--);
+    background: var(--theme_color_sec--);
     display: flex;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 /*
@@ -60,7 +61,7 @@ FOOD MENUE COLUMNS
 }
 
 .column-6 {
-    width: 100%;
+    width: 33%;
     border-right: 20px solid var(--theme_color_sec--);
     border-left: 20px solid var(--theme_color_sec--);
 }
@@ -70,7 +71,7 @@ DRINKS MENUE COLUMNS
 
 */
 .column-7 {
-    width: 100%;
+    width: 33%;
     border-left: 20px solid var(--theme_color_sec--)
 }
 
@@ -82,6 +83,7 @@ MENUE ITEMS CONTAINERS
 .combos_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .pie_container {
@@ -112,11 +114,13 @@ MENUE ITEMS CONTAINERS
 .breakfast_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .burgers_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .fish_container {
@@ -132,6 +136,7 @@ MENUE ITEMS CONTAINERS
 .chow_mein_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .chips_container {
@@ -183,6 +188,7 @@ MENUE LIST TITLE & LABLE
     color: var(--theme_color_sec--);
     width: 100%;
     text-align: center;
+    box-shadow: 0 10px 10px var(--theme_color_sec--);
 }
 
 .lable {
@@ -190,6 +196,7 @@ MENUE LIST TITLE & LABLE
     font-size: var(--lable_font_size--);
     display: flex;
     min-width: 100%;
+    max-height: 180px;
     justify-content: space-between;
     color: var(--theme_color_sec--);
     letter-spacing: 0.25rem;
