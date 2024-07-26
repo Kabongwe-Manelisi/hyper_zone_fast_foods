@@ -4,8 +4,8 @@
     --title_font--: "Permanent Marker", cursive; font-weight: 400; font-style: normal;
     --lable_font--: "Bebas Neue";
     --title_font_size--: 2.75rem;
-    --lable_font_size--: 2.75rem;
-    --sub-title_font_size--: 3rem;
+    --lable_font_size--: 3.5rem;
+    --sub-title_font_size--: 5.5rem;
 }
 
   
@@ -47,7 +47,11 @@ FOOD MENUE COLUMNS
     border-right: 20px solid var(--theme_color_sec--);
     border-left: 20px solid var(--theme_color_sec--);
 }
+/*
 
+SECOND FOOD MENU COLUMNS
+
+*/
 .column-4 {
     width: 100%;
     border-right: 20px solid var(--theme_color_sec--);
@@ -61,18 +65,30 @@ FOOD MENUE COLUMNS
 }
 
 .column-6 {
-    width: 33%;
+    width: 100%;
     border-right: 20px solid var(--theme_color_sec--);
     border-left: 20px solid var(--theme_color_sec--);
 }
+
 /*
 
-DRINKS MENUE COLUMNS
+SAMOOSA EXTRAS & DRINKS MENU COLUMNS
 
 */
 .column-7 {
-    width: 33%;
-    border-left: 20px solid var(--theme_color_sec--)
+    width: 100%;
+    border-right: 20px solid var(--theme_color_sec--);
+    border-left: 20px solid var(--theme_color_sec--);
+}
+.column-8 {
+    width: 100%;
+    border-left: 20px solid var(--theme_color_sec--);
+    border-right: 20px solid var(--theme_colo_sec--);
+}
+.column-9{
+    width: 100%;
+    border-left: 20px solid var(--theme_color_sec--);
+    border-right: 20px solid var(--theme-color_sec--)
 }
 
 /*
@@ -89,26 +105,25 @@ MENUE ITEMS CONTAINERS
 .pie_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .sandwiches_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .samoosa_container {
     display: flex;
     flex-direction: column;
-}
-
-.hot_beverages {
-    display: flex;
-    flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .slush_puppy_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .breakfast_container {
@@ -126,11 +141,13 @@ MENUE ITEMS CONTAINERS
 .fish_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .grills_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .chow_mein_container {
@@ -142,26 +159,42 @@ MENUE ITEMS CONTAINERS
 .chips_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .salads_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--)
 }
 
 .wraps_container{
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .bunnies_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 .extras_container {
     display: flex;
     flex-direction: column;
+    background: var(--theme_color_prime--)
+}
+.curry_container {
+    display: flex;
+    flex-direction: column;
+    background: var(--theme_color_prime--);
+}
+
+.beverage_container {
+    display: flex;
+    flex-direction: column;
+    background: var(--theme_color_prime--);
 }
 
 /*
