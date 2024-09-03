@@ -1,6 +1,7 @@
 :root {
-    --theme_color_prime--: rgb(255, 94, 0);;
-    --theme_color_sec--: rgb(0, 0, 0)/*rgb(30, 31, 31)*/;
+    --theme_color_prime--: rgb(247, 7, 7);
+    --theme_color_prime_alt--: rgb(255, 255, 255);
+    --theme_color_sec--: rgb(0, 0, 0);
     --title_font--: "Permanent Marker", cursive; font-weight: 400; font-style: normal;
     --lable_font--: "Bebas Neue";
     --title_font_size--: 2.75rem;
@@ -18,7 +19,25 @@ frame container holding entire body container
     height: 100%;
     width: 100%;
 }
+/*
+menu 3 frame
+*/
+.menu-3-frame {
+    background: var(--theme_color_sec--);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
 
+.frame-top {
+    display: flex;
+}
+.frame-bottom {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
 /*
 
 MAIN BODY COLUMNS/CONTAINERS
@@ -88,12 +107,22 @@ SAMOOSA EXTRAS & DRINKS MENU COLUMNS
 .column-9{
     width: 100%;
     border-left: 20px solid var(--theme_color_sec--);
-    border-right: 20px solid var(--theme-color_sec--)
+    border-right: 20px solid var(--theme-color_sec--);
+}
+.column-10 {
+    width: 100%;
+    display: flex;
 }
 
 /*
 
 MENUE ITEMS CONTAINERS
+
+*/
+
+/*
+
+COMBOS CONTAINER
 
 */
 .combos_container {
@@ -102,101 +131,204 @@ MENUE ITEMS CONTAINERS
     background: var(--theme_color_prime--);
 }
 
+/*
+
+PIES CONTANIER
+
+*/
 .pie_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
-.sandwiches_container {
-    display: flex;
-    flex-direction: column;
-    background: var(--theme_color_prime--);
-}
+/*
 
+SAMOOSA CONTAINER
+
+*/
 .samoosa_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+SLUSH PUPPIES CONTAINER
+
+*/
 .slush_puppy_container {
     display: flex;
+    width: 100%;
     flex-direction: column;
-    background: var(--theme_color_prime--);
+    border-left: 20px solid var(--theme_color_sec--);
+    border-right: 20px solid var(--theme-color_sec--);
 }
 
+.slush_puppy_container .lable {
+    max-height: 175px;
+    margin-top: 0.5rem;
+    background: var(--theme_color_prime--);
+    box-shadow: 0 10px 10px var(--theme_color_sec--);
+}
+
+.puppy-img {
+    align-self: center;
+    width: 50rem;
+}
+/*
+
+BREAKFAST CONTSINER
+
+*/
 .breakfast_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+BURGERS CONRTAINER
+
+*/
 .burgers_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+FISH CONTAINER
+
+*/
 .fish_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+GRILLS CONTAINER
+
+*/
 .grills_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
-.chow_mein_container {
-    display: flex;
-    flex-direction: column;
-    background: var(--theme_color_prime--);
-}
+/*
 
+CHIPS CONTAINER
+
+*/
 .chips_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+SALAD CONTAINER
+
+*/
 .salads_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--)
 }
 
+/*
+
+WRAPS CONTAINER
+
+*/
 .wraps_container{
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+BUNNIES CONTAINER
+
+*/
 .bunnies_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+EXTRAS CONTAINER
+
+*/
 .extras_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--)
 }
+
+/*
+
+CURRIES CONTAINER
+
+*/
 .curry_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+BEVERAGES CONTAINER
+
+*/
 .beverage_container {
     display: flex;
     flex-direction: column;
     background: var(--theme_color_prime--);
 }
 
+/*
+
+SANDWICHES CONTAINER
+
+*/
+.sandwiches_container {
+    display: flex;
+    flex-direction: column;
+    width: 180%;
+    border-left: 20px solid var(--theme_color_sec--);
+    border-right: 20px solid var(--theme-color_sec--);
+}
+
+.sandwiches-seperator {
+    display: flex;
+}
+.sandwiches-left {
+    width: 50%;
+    border-right: 20px solid var(--theme-color_sec--);
+}
+.sandwiches-right {
+    width: 50%;
+    border-left: 20px solid var(--theme_color_sec--);
+    border-right: 20px solid var(--theme-color_sec--);
+}
+.sandwiches_container .lable {
+    max-height: 175px;
+    margin-top: 0.5rem;
+    background: var(--theme_color_prime--);
+    box-shadow: 0 10px 10px var(--theme_color_sec--);
+}
 /*
 
 MENUE LIST TITLE & LABLE
@@ -236,10 +368,26 @@ MENUE LIST TITLE & LABLE
     box-shadow: 0 10px 10px var(--theme_color_sec--);
 }
 
+.lable-alt {
+    font-family: var(--lable_font--);
+    font-size: var(--lable_font_size--);
+    display: flex;
+    min-width: 100%;
+    max-height: 175px;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    background: var(--theme_color_prime_alt--);
+    letter-spacing: 0.25rem;
+    box-shadow: 0 10px 10px var(--theme_color_sec--);
+}
+
 .menue-item {
     margin: 0 1rem;
 }
 
+#prime_alt {
+background: var(--theme_color_prime_alt--);
+}
 .menue-item-price {
     margin: 0 1rem;
 }
